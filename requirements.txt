@@ -1,0 +1,4 @@
+/your-bot-repo
+├── main.py               ← Your Telegram bot script
+├── requirements.txt      ← All your Python dependencies
+├── render.yaml           ← (optional) Render config file
