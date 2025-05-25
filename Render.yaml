@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 6761698311:AAHWgoiPxS_A4LSTf5GpRxQ3iTj0qHAGwGk
+      - key: TELEGRAM_CHAT_ID
+        value: 6121081178
+      - key: TWITTER_BEARER_TOKEN
+        value: AAAAAAAAAAAAAH56iAEAAAAAxKoErJHhxV5Dn2r9%2Fcz7aJco%2Bdc%3DaNLEjra8MnKnSkgv6ChfY7VdxKSOX26Pk0jsXDzqCecMCpmqZs
+      - key: MIN_FOLLOWERS
+        value: "400"
+      - key: KEYWORDS
+        value: "newtoken,tokenlaunch,cryptotoken,presaletoken,airdrops,airdropsale,fairlaunchcrypto,tokenpresale,defi launch,defi token,nft token,crypto presale,crypto airdrop,IDO,IEO,dex launch,swap launch,crypto launchpad,tokenomics,smartcontract,ERC20,BEP20,token sale,launchpad,staking token"
